@@ -1,0 +1,101 @@
+2015-12-23T06:31:59.889444+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2015-12-23T06:31:59.889634+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-12-23T06:32:00.765820+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-23T06:32:00.767419+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-23T06:32:00.753563+00:00 heroku[web.1]: Process exited with status 1
+2015-12-23T06:32:02.330211+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-12-23T06:32:04.808388+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-12-23T06:32:04.808800+00:00 app[web.1]: npm ERR! node v5.1.1
+2015-12-23T06:32:04.809404+00:00 app[web.1]: npm ERR! npm  v3.3.12
+2015-12-23T06:32:04.807560+00:00 app[web.1]: npm ERR! Linux 3.13.0-71-generic
+2015-12-23T06:32:04.811442+00:00 app[web.1]: 
+2015-12-23T06:32:04.811748+00:00 app[web.1]: npm ERR! missing script: start
+2015-12-23T06:32:04.811987+00:00 app[web.1]: npm ERR! 
+2015-12-23T06:32:04.812164+00:00 app[web.1]: npm ERR! If you need help, you may report this error at:
+2015-12-23T06:32:04.812347+00:00 app[web.1]: npm ERR!     <https://github.com/npm/npm/issues>
+2015-12-23T06:32:04.819979+00:00 app[web.1]: 
+2015-12-23T06:32:04.820168+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2015-12-23T06:32:04.820339+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-12-23T06:32:05.523165+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-23T06:32:05.508911+00:00 heroku[web.1]: Process exited with status 1
+2015-12-23T06:32:18.785628+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=fd6f0dcb-08a4-4150-af60-05aa0fadbc21 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:32:19.107353+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=1999d284-e2bd-4e87-996e-99bd7b9621d4 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:35:17.753144+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=7f68201b-5b71-46e5-a8e4-a5ab7445dbdd fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:35:24.329081+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=a404151d-10be-44dd-9290-a52c8001a89a fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:35:27.013867+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=b06d1750-5f69-49d7-b13c-aeb1cd155826 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:35:27.319588+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=d0524425-9c3c-4781-be24-2f77b4426b73 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:41:22.652590+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=e6234a3d-6321-4713-a3de-95f1316e8dcd fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:41:22.966190+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=2c52ef34-7033-41ba-aaf8-b3ac62d58ac3 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:57:14.026050+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=3095f1ae-0fec-460e-afa0-9ee6e0cb6b81 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:57:14.253927+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=1e8e478b-bcec-4061-bf7e-36f522e4aada fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:58:33.688264+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=3d480a11-01b6-4a73-91c9-8032648ba653 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:58:33.966365+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=313c0bac-b08b-4cb6-973c-0731d6975bb2 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:58:44.669629+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=af8524b9-d56d-4797-bf8f-8346d5368ffd fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:58:44.862114+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=b76f0c0d-0886-4564-851d-b5f7ced8b067 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:59:45.923683+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=4b2115e4-361e-47e0-b02c-4e0b7f1924b8 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T06:59:46.121463+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=3a946f05-46d9-4f8c-92e9-1f73b802c290 fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T07:01:43.266027+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-23T07:01:51.351184+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-12-23T07:01:54.898136+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-12-23T07:01:54.898500+00:00 app[web.1]: npm ERR! node v5.1.1
+2015-12-23T07:01:54.899334+00:00 app[web.1]: npm ERR! npm  v3.3.12
+2015-12-23T07:01:54.918294+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2015-12-23T07:01:54.918455+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-12-23T07:01:54.897312+00:00 app[web.1]: npm ERR! Linux 3.13.0-71-generic
+2015-12-23T07:01:54.901111+00:00 app[web.1]: 
+2015-12-23T07:01:54.901381+00:00 app[web.1]: npm ERR! missing script: start
+2015-12-23T07:01:54.901625+00:00 app[web.1]: npm ERR! 
+2015-12-23T07:01:54.901824+00:00 app[web.1]: npm ERR! If you need help, you may report this error at:
+2015-12-23T07:01:54.902029+00:00 app[web.1]: npm ERR!     <https://github.com/npm/npm/issues>
+2015-12-23T07:01:54.917999+00:00 app[web.1]: 
+2015-12-23T07:01:55.963693+00:00 heroku[web.1]: Process exited with status 1
+2015-12-23T07:03:36.446978+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=49942ee0-8773-4d19-a3a2-75a7b9393dad fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T07:03:36.901184+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=13e6b454-13c7-4a27-a5d7-65c507bb420f fwd="108.82.220.59" dyno= connect= service= status=503 bytes=
+2015-12-23T07:39:53.909090+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=60a304a4-5b7a-42e2-8680-43bb80a7ae91 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T07:39:54.067655+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=cceb8bd2-559c-4167-b72e-b2cbf612bc51 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T07:41:19.758960+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=7f1c17f5-db0d-4276-86ec-b89360590359 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T07:41:19.960387+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=58efbb12-5164-431e-b564-5931c7d07d8c fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T07:45:13.696954+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-23T07:45:15.150916+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-12-23T07:45:17.734515+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-12-23T07:45:17.734867+00:00 app[web.1]: npm ERR! node v5.1.1
+2015-12-23T07:45:17.735324+00:00 app[web.1]: npm ERR! npm  v3.3.12
+2015-12-23T07:45:17.737490+00:00 app[web.1]: 
+2015-12-23T07:45:17.737834+00:00 app[web.1]: npm ERR! missing script: start
+2015-12-23T07:45:17.738131+00:00 app[web.1]: npm ERR! 
+2015-12-23T07:45:17.738404+00:00 app[web.1]: npm ERR! If you need help, you may report this error at:
+2015-12-23T07:45:17.738653+00:00 app[web.1]: npm ERR!     <https://github.com/npm/npm/issues>
+2015-12-23T07:45:17.746678+00:00 app[web.1]: 
+2015-12-23T07:45:17.733889+00:00 app[web.1]: npm ERR! Linux 3.13.0-71-generic
+2015-12-23T07:45:17.747117+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2015-12-23T07:45:17.747442+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-12-23T07:45:18.765389+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-23T07:45:18.760875+00:00 heroku[web.1]: Process exited with status 1
+2015-12-23T09:16:32.420495+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-23T09:16:33.981764+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-12-23T09:16:36.108467+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-12-23T09:16:36.108819+00:00 app[web.1]: npm ERR! node v5.1.1
+2015-12-23T09:16:36.109631+00:00 app[web.1]: npm ERR! npm  v3.3.12
+2015-12-23T09:16:36.111636+00:00 app[web.1]: npm ERR! 
+2015-12-23T09:16:36.111445+00:00 app[web.1]: npm ERR! missing script: start
+2015-12-23T09:16:36.111217+00:00 app[web.1]: 
+2015-12-23T09:16:36.107776+00:00 app[web.1]: npm ERR! Linux 3.13.0-71-generic
+2015-12-23T09:16:36.111781+00:00 app[web.1]: npm ERR! If you need help, you may report this error at:
+2015-12-23T09:16:36.111941+00:00 app[web.1]: npm ERR!     <https://github.com/npm/npm/issues>
+2015-12-23T09:16:36.118699+00:00 app[web.1]: 
+2015-12-23T09:16:36.118974+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2015-12-23T09:16:36.119106+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-12-23T09:16:36.998728+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-23T09:16:36.989162+00:00 heroku[web.1]: Process exited with status 1
+2015-12-23T09:32:36.941225+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=594687a1-3b29-4d7f-b1d2-4bb81bae4826 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T09:32:37.103330+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=cbb723f6-ac20-4796-9baa-cf6157905e92 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T09:35:56.123852+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=5caf3002-c2b9-4547-ab4b-a16e90b7b338 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T09:35:56.288173+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=b4fc9460-b0ec-42d4-9bca-e9365a401ea1 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T09:39:02.282544+00:00 heroku[api]: Starting process with command `console` by 360chris@gmail.com
+2015-12-23T09:39:04.439604+00:00 heroku[run.1672]: Awaiting client
+2015-12-23T09:39:04.473328+00:00 heroku[run.1672]: Starting process with command `console`
+2015-12-23T09:39:04.833819+00:00 heroku[run.1672]: State changed from starting to up
+2015-12-23T09:39:07.069614+00:00 heroku[run.1672]: State changed from up to complete
+2015-12-23T09:39:07.054684+00:00 heroku[run.1672]: Process exited with status 127
+2015-12-23T09:42:16.278143+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=protected-river-2599.herokuapp.com request_id=38dbe1f1-30ed-4dd7-8461-a47fbf41d080 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
+2015-12-23T09:42:16.108145+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=protected-river-2599.herokuapp.com request_id=ac2948c2-8004-4d67-b0ff-392f0d0251e1 fwd="73.255.34.6" dyno= connect= service= status=503 bytes=
