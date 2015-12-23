@@ -1,0 +1,59 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: hockey;
+    src: url('../fonts/brewsky.ttf');
+}
+
+@font-face {
+    font-family: puck;
+    src: url('../fonts/remachines.ttf');
+}
+@font-face {
+    font-family: intaglio;
+    src: url('../fonts/intaglio.ttf');
+}
+
+@font-face {
+    font-family: quig;
+    src: url('../fonts/quigley.ttf');
+}
+
+h1 {
+	font-family: intaglio;
+	text-align: center;
+	font-size: 100px;
+}
+p{
+	padding-left: 6.5%;
+	padding-right: 6.5%;
+	text-indent: 50px;
+}
+h4 {
+	text-align: center;
+}
+
+.all-divs {
+	padding-bottom: 100px;
+}
+
+.button-nav:hover{
+	background-color: #262626;
+}
+
+.button-nav:focus{
+	background-color: #262626;
+}
+.share-button{
+	margin: 0 auto;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+.view{
+	border-radius: 20px;
+	border: solid 1px black;
+	margin: 0 auto;
+	width: 0 auto;
+	height: 94%;
+}

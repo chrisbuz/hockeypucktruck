@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Hockey Puck</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body ng-app="starter">
+    <div class="button-bar bar-dark">
+      <a id="home_button" class="button button-nav" href="#/home">Home</a>
+      <a class="button button-nav" href="#/menu">Menu</a>
+      <a class="button button-nav" href="#/schedule">Schedule</a>
+      <a class="button button-nav" href="#/about">About Us</a>
+      <a class="button button-nav" href="#/contact">Contact Us</a>
+    </div>
+
+    <ion-nav-view></ion-nav-view>
+    <script id="home.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <!-- The content of the page -->
+          <div id="home_div" class="view animated fadeIn">
+            <h1> HOME INFORMATION </h1>
+          </div>
+
+        </ion-content>
+      </ion-view>
+    </script>    
+
+    <script id="about.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view>
+        <ion-content class="padding">
+          <!-- The content of the page -->
+          <div id="about_div" class="view animated fadeIn all-divs">
+            <h1> ABOUT INFORMATION </h1> <br>
+            <h4>Why Hockey Puck?</h4> <br>
+            <p>
+                Diners have been considered to be the most widespread and culturally diverse establishments in the United States. They started as horse-pulled food wagons and later transformed into prefabricated buildings in their heydays of the 1950s. With their casual setting and value-driven menus they became the living room of the community.
+            </p>
+            <p>
+                Inspired by the every-day lingo between the waiter and the cook at the diner, Hockey Puck was the code-word used to describe a well-done hamburger. 
+            </p>
+            <p>
+                Influenced by the humble beginnings of the diner from its horse-pulled days we strive to preserve the essence of the diner as well as innovate contemporary flare.
+            </p>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script> 
+
+    <script id="menu.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <!-- The content of the page -->
+          <div id="menu_div" class="view animated fadeIn">
+            <h1> MENU INFORMATION </h1>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="contact.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view>
+        <ion-content class="padding">
+          <!-- The content of the page -->
+          <div id="contact_div" class="view animated fadeIn">
+            <h1> CONTACT INFORMATION </h1>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>   
+
+    <script id="schedule.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view>
+        <ion-content class="padding">
+          <!-- The content of the page -->
+          <div id="schedule_div" class="view animated fadeIn">
+            <h1> SCHEDULE INFORMATION </h1>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <ion-footer-bar class="bar">
+        <button class="share-button" ng-click="shareAnywhere()">Share anywhere</button>
+        <button class="share-button" ng-click="shareViaTwitter('some message', null, 'http://blog.nraboy.com')">Share on Twitter</button>
+    </ion-footer-bar>
+  </body>
+</html>
