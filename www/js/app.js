@@ -24,39 +24,64 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
 
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  
+  $ionicConfigProvider.views.transition('none')
+
   $stateProvider
-  .state('home', {
+
+    .state('app', {
+    url: '/app',
+    abstract: true,
+    templateUrl: 'pages/nav.html'
+  })
+
+    .state('app.home', {
     url: '/home',
-    templateUrl: 'home.html',
-  })
-
-  .state('about', {
-    url: '/about',
-    templateUrl: 'about.html'
-  })
-  .state('menu', {
-    url: '/menu',
-    templateUrl: 'menu.html',
-  })
-
-  .state('contact', {
-    url: '/contact',
-    templateUrl: 'contact.html',
-  })
-
-  .state('schedule', {
-    url: '/schedule',
-    templateUrl: 'schedule.html',
-  })
-
-  .state('land', {
-    url: '/',
-    function(){
-        $("home_button").trigger('click');
+    views: {
+      'menuContent': {
+        templateUrl: 'pages/home.html'
+      }
     }
   })
 
-  $ionicConfigProvider.views.transition('none')
+  .state('app.about', {
+    url: '/about',
+    views: {
+      'menuContent': {
+        templateUrl: 'pages/about.html'
+      }
+    }
+  })
+
   
-  $urlRouterProvider.otherwise("/");
+
+  .state('app.menu', {
+      url: '/menu',
+      views: {
+        'menuContent': {
+          templateUrl: 'pages/menu.html'
+        }
+      }
+    })
+    .state('app.contact', {
+      url: '/contact',
+      views: {
+        'menuContent': {
+          templateUrl: 'pages/contact.html'
+        }
+      }
+    })
+
+  .state('app.schedule', {
+    url: '/schedule',
+    views: {
+      'menuContent': {
+        templateUrl: 'pages/schedule.html'
+      }
+    }
+  });
+
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/app/home');
+
 });
