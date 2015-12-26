@@ -67,6 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
       url: '/contact',
       views: {
         'menuContent': {
+          //templateUrl: 'pages/contact/index.html'
           templateUrl: 'pages/contact.html'
         }
       }

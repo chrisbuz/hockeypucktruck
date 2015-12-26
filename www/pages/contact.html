@@ -1,11 +1,37 @@
 <ion-view>
 	<ion-nav-title>
-      <img src="icons/logo.png" width="20" height="20">
-      Hockey Puck
+	  	<ion-header-bar class="bar-stable">
+	  		<h1 class="bar-title"> <img src="icons/logo.png" width="25" height="25"/> Hockey Puck</h1>
+		</ion-header-bar>
     </ion-nav-title>
   <ion-content>
     <div id="contact_div" class="titles animated fadeIn">
-            <h1> CONTACT </h1>
+            <h1> CONTACT US </h1>
   	</div>
+  	<div id="contact_form">
+    <section id="hire">
+        
+      <form>
+    	      <div class="field name-box">
+    		        <input type="text" id="name" placeholder="Who Are You?"/>
+            		<label for="name">Name</label>
+    		        <span class="ss-icon">check</span>
+    	      </div>
+
+    	      <div class="field email-box">
+    		        <input type="text" id="email" placeholder="name@email.com"/>
+    		        <label for="email">Email</label>
+    		        <span class="ss-icon">check</span>
+    	      </div>
+
+    	      <div class="field msg-box">
+    		        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+    		        <label for="msg">Msg</label>
+    		        <span class="ss-icon">check</span>
+    	      </div>
+
+    	      <input class="button" type="submit" value="Send" />
+      </form>
+    </section>
   </ion-content>
 </ion-view>
