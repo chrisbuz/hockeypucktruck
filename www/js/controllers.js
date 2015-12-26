@@ -11,6 +11,7 @@ var example = angular.module('starter.controllers', [])
             $cordovaSocialSharing.shareViaTwitter(message, image, link);
         }, function(error) {
             alert("Cannot share on Twitter");
+
         });
     }
 })
@@ -19,4 +20,5 @@ example.controller("ExampleSlider", function($scope, $ionicSlideBoxDelegate) {
     $scope.navSlide = function(index) {
         $ionicSlideBoxDelegate.slide(index, 500);
     }
+
 });
