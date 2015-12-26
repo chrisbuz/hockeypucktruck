@@ -18,7 +18,12 @@
 	font-family: featureditem;
 	text-align: center;
 	font-size: 100px;
-	font-size: 4vw;
+	font-size: 5.0vw;
+	padding-left: 20px;
+}
+
+.navig-title{
+	font: featureditem;
 }
 
 .fonts{
@@ -50,5 +55,22 @@ h4 {
     transform: rotate(90deg);
 }
 
-.slider { height: 100%; text-align: center }
-.scroll { height: 100% }
+.slider { 
+	height: 100%; 
+	text-align: center;
+}
+
+.slider-slide {
+  text-align: center;  
+}
+.slider-slide img {
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.scroll { 
+	height: 100% 
+}
