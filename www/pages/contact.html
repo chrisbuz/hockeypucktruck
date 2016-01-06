@@ -24,6 +24,12 @@
     		        <span class="ss-icon">check</span>
     	      </div>
 
+            <div class="field email-box">
+                <input type="text" id="sub" placeholder="Subject"/>
+                <label for="subject">Subject</label>
+                <span class="ss-icon">check</span>
+            </div>
+
     	      <div class="field msg-box">
     		        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
     		        <label for="msg">Msg</label>
@@ -32,6 +38,7 @@
 
     	      <input class="button" type="submit" value="Send" />
       </form>
+      <h3><?php include "../php/email_code.php"?></h3>
     </section>
   </ion-content>
 </ion-view>
