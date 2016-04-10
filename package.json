@@ -25,6 +25,6 @@
   ],
   "cordovaPlatforms": [],
   "scripts": {
-    "startdev": "node server.js"
+    "dev": "node server.js & start chrome http://localhost:5000"
   }
 }

@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: hockeypucktruck
+global:
+  application_name: Hockey Puck Truck
+  default_ec2_keyname: aws-eb
+  default_platform: 64bit Amazon Linux 2015.09 v2.0.8 running Node.js
+  default_region: us-west-2
+  profile: eb-cli
+  sc: git
