@@ -24,5 +24,7 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "start": "node server.js"
+  "scripts": {
+    "startdev": "node server.js"
+  }
 }
