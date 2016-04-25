@@ -14,6 +14,18 @@
     src: url('../fonts/featureditem.ttf');
 }
 
+.pad-bottom{
+	padding-bottom: 20px;
+}
+
+.pad-top{
+	padding-top: 20px;
+}
+
+.padding{
+	padding: 2%;
+}
+
 .titles h1{
 	font-family: featureditem;
 	text-align: center;
@@ -21,6 +33,16 @@
 	padding-left: 20px;
 	margin: 0 auto;
 }
+
+.center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
 
 #calendar_div{
 	text-align: center;

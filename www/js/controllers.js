@@ -1,24 +1,59 @@
-var example = angular.module('starter.controllers', [])
+var app = angular.module('starter.controllers', [])
 
-.controller("ExampleController", function($scope, $cordovaSocialSharing) {
- 
-    $scope.shareAnywhere = function() {
-        $cordovaSocialSharing.share("This is your message", "This is your subject", "www/img/1.png", "http://blog.nraboy.com");
+app.controller("usersController", ['$scope', '$http', '$cordovaToast', function ($scope, $http, $cordovaToast){
+    var vm = this;
+
+    vm.firstname = "";
+    vm.lastname = "";
+    vm.email = "";
+
+    vm.users = {};
+    vm.usersLoaded = false;
+
+    function update(){
+        //setTimeout(function(){
+        $http.get('/allusers').then(function(res){
+            for(var i=0; i < res.data.length; i++){
+                    vm.users[res.data[i].id] = res.data[i];
+                }
+                     
+                    vm.UsersLoaded = true;
+                },
+                function(err){
+                    console.log("Error: " + err + " occurred.") 
+                }
+            );
+        //}, 500); 
     }
- 
-    $scope.shareViaTwitter = function(message, image, link) {
-        $cordovaSocialSharing.canShareVia("twitter", message, image, link).then(function(result) {
-            $cordovaSocialSharing.shareViaTwitter(message, image, link);
-        }, function(error) {
-            alert("Cannot share on Twitter");
 
+    update();
+
+    vm.submit = function(){
+        if(vm.firstname === "" || vm.lastname === "" || vm.email === "" ) {
+            alert('Please fill out all fields!');
+        }
+        else{
+
+            $http.post('/adduser', {name: vm.firstname + " " + vm.lastname , email: vm.email})
+                .then(function(res){
+                    update();
+                });
+        }
+    }  
+
+    vm.delete = function(key){
+        $http.delete('/deleteuser/' + key)
+            .then(function(res){
+                delete vm.users[key];               
+                update();
         });
     }
-})
 
-example.controller("ExampleSlider", function($scope, $ionicSlideBoxDelegate) {
-    $scope.navSlide = function(index) {
-        $ionicSlideBoxDelegate.slide(index, 500);
+    vm.update = function(key, _name, _email){
+        $http.put('/updateuser/' + key, {name:_name, email:_email})
+            .then(function(res){               
+                update();
+        });
     }
 
-});
+}]);

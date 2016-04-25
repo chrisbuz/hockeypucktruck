@@ -1,0 +1,48 @@
+<ion-view>
+	<ion-nav-title>
+	  	<ion-header-bar class="bar-stable">
+	  		<h1 class="bar-title"> <img src="icons/logo.png" width="25" height="25"/> Hockey Puck</h1>
+		</ion-header-bar>
+    </ion-nav-title>
+  <ion-content>
+    <div id="menu_div" class="titles animated fadeIn">
+            <h1> USERS </h1>
+  	</div>
+
+    <div class="list pad-bottom">
+      <form ng-submit="vm.submit()">
+        <label class="item item-input">
+          <input type="text" placeholder="First Name" ng-model="vm.firstname" >
+        </label>
+          <br>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name" ng-model="vm.lastname">
+        </label>
+        <br>
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="vm.email">
+        </label>
+
+        <div class="center pad-top">
+          <input type="submit" value="Add User">
+        </div>    
+        
+      </form>
+  
+    </div>
+    
+    <div class="center">
+      <ion-spinner ng-hide="vm.UsersLoaded"></ion-spinner>
+    </div>
+      
+    <div ng-repeat="(id, user) in vm.users" ng-show="vm.UsersLoaded">
+      <ion-item class="animated fadeIn center">
+        {{id}} {{user.name}} {{user.email}} 
+        <div class="right ">
+          <button class="button button-stable ion-close-circled" ng-click="vm.delete(id)"> Delete </button>
+        </div>
+      </ion-item>
+    </div>
+      
+  </ion-content>
+</ion-view>

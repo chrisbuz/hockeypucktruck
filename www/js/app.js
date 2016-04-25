@@ -22,17 +22,26 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
   });
 })
 
-
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
   
-  $ionicConfigProvider.views.transition('none')
+  $ionicConfigProvider.views.transition('none');
+  $ionicConfigProvider.spinner.icon('bubbles');
 
   $stateProvider
 
     .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'pages/nav.html'
+      url: '/app',
+      abstract: true,
+      templateUrl: 'pages/nav.html'
+    })
+
+    .state('app.login', {
+      url: '/login',
+      views: {
+      'menuContent': {
+        templateUrl: 'pages/login.html'
+      }
+    }
   })
 
     .state('app.home', {
@@ -53,31 +62,40 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
     }
   })
 
-  
-
   .state('app.menu', {
-      url: '/menu',
-      views: {
-        'menuContent': {
-          templateUrl: 'pages/menu.html'
-        }
+    url: '/menu',
+    views: {
+      'menuContent': {
+        templateUrl: 'pages/menu.html'
       }
-    })
-    .state('app.contact', {
-      url: '/contact',
-      views: {
-        'menuContent': {
-          //templateUrl: 'pages/contact/index.html'
-          templateUrl: 'pages/contact.html'
-        }
+    }
+  })
+
+  .state('app.contact', {
+    url: '/contact',
+    views: {
+      'menuContent': {
+        templateUrl: 'pages/contact.html'
       }
-    })
+    }
+  })
 
   .state('app.schedule', {
     url: '/schedule',
     views: {
       'menuContent': {
         templateUrl: 'pages/schedule.html'
+      }
+    }
+  })
+
+  .state('app.users', {
+    url:'/users',
+    views:{
+      'menuContent':{
+        templateUrl:'pages/users.html',
+        controller: 'usersController',
+        controllerAs: 'vm'
       }
     }
   });
