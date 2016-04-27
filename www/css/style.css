@@ -118,29 +118,29 @@ h4 {
 }
 
 #contact_form {
-          background: white;
-          font-size: 62.5%;
-          font-family: 'Lato', sans-serif;
-          font-weight: 300;
-          color: #B6B6B6;
-        }
-        #contact_form section {
-          background: white;
-          margin: 0 auto 120px;
-          border-top: 15px solid #313A3D;
-          text-align: center;
-          padding: 30px 0 110px;
-          width: 100%;
-        }
-        #contact_form section h1 {
-          margin-bottom: 40px;
-          font-size: 4em;
-          text-transform: uppercase;
-          font-family: 'Lato', sans-serif;
-          font-weight: 100;
-        }
+  background: white;
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #B6B6B6;
+}
+#contact_form section {
+  background: white;
+  margin: 0 auto 120px;
+  border-top: 15px solid #313A3D;
+  text-align: center;
+  padding: 30px 0 110px;
+  width: 100%;
+}
+#contact_form section h1 {
+  margin-bottom: 40px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
 
-        form {
+form {
   width: 58.33333%;
   margin: 0 auto;
 }
@@ -241,6 +241,34 @@ form .field:hover label {
   width: 18%;
   background: #313A3D;
   color: white;
+}
+
+form input[type="submit"] {
+  background: #FD9638;
+  color: white;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 1% 10%;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background: #313A3D;
+  color: #FD9638;
+}
+form input[type="submit"]:focus {
+  outline: none;
+  background: #cd6302;
 }
 
 

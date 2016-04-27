@@ -8,7 +8,7 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"-->
+    <link href="css/toaster.css" rel="stylesheet">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -21,12 +21,12 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
-    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-
+    <script src="js/toaster.js" type="text/javascript"></script>
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script> 
   </head>
 
   <body ng-app="starter">
-    
+    <toaster-container toaster-options="{'time-out': 2500, 'close-button':true, 'animation-class': 'toast-top-center'}"></toaster-container>
     <ion-nav-view></ion-nav-view>
 
   </body>
