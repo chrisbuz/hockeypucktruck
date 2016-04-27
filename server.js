@@ -19,7 +19,7 @@ app.use(express.static('www'));
 app.set('port', process.env.PORT || 5000);
 app.set('local', "http://localhost:" + app.get('port'));
 
-var connectionString = process.env.DATABASE_URL || 'postgres://lkeytzjzoodots:uMIwI_sFIA6ISPqKGNa13eAJvr@ec2-54-227-245-197.compute-1.amazonaws.com:5432/d7v1ngj203a0tv';
+var connectionString = process.env.DATABASE_URL;
 
 //API Calls
 app.get('/allusers', function(req, res){
