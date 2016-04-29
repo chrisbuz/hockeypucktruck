@@ -12,7 +12,15 @@ app.use(bodyParser.json());
 //PostGres Configs
 pg.defaults.ssl = true;
 
+var allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', 'example.com');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
 
+    next();
+}
+
+app.use(allowCrossDomain);
 app.use(express.static('www'));
 
 //Set Local variables
@@ -147,7 +155,6 @@ app.delete('/deleteuser/:id', function(req, res){
 });
 
 //Start Server on specified Port
-
 app.listen(app.get('port'), function () {
 	console.log('Express server listening on port '  + app.get('port') + '\n');
 	

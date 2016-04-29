@@ -37,7 +37,7 @@
     </div>
       
     <div ng-repeat="(id, user) in vm.users" ng-show="vm.UsersLoaded">
-      <ion-item class="animated fadeIn center">
+      <ion-item class=" center">
         {{id}} {{user.name}} {{user.email}} 
         <div class="right ">
           <button class="button button-stable ion-close-circled" ng-click="vm.delete(id)"> Delete </button>
