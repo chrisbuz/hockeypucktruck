@@ -1,8 +1,11 @@
 var express = require('express');
 var bodyParser = require("body-parser");
 var pg = require('pg');
+var cors = require('cors');
+
 
 app = express();
+app.use(cors());
 
 const exec = require('child_process').exec;
 
@@ -12,15 +15,6 @@ app.use(bodyParser.json());
 //PostGres Configs
 pg.defaults.ssl = true;
 
-var allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', 'example.com');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-
-    next();
-}
-
-app.use(allowCrossDomain);
 app.use(express.static('www'));
 
 //Set Local variables
@@ -171,4 +165,3 @@ app.listen(app.get('port'), function () {
 		}, 2000);		
 	}
 });
-
